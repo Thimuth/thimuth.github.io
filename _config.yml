@@ -34,13 +34,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
-netlify:
-  headers:
-    - paths:
-        - /index.html
-      headers:
-        - "X-Frame-Options: DENY"
-        - "X-XSS-Protection: 1; mode=block"
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
 
 # Exclude from processing.
 # The following items will not be processed, by default.
